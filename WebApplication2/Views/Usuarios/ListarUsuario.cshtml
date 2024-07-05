@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Data.Usuarios>
+<div class="table-responsive" style="background-color:white;">
+    <table class="table table-sm table-hover" id="tblUsuarios">
+        @if (Model != null)
+        {
+            <thead>
+                <tr>
+                    <th>UsrId</th>
+                    <th>UsrUsuario</th>
+                    <th>UsrNombres</th>
+                    <th>UsrApellidos</th>
+                    <th>UsrIdentificacion</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr style="cursor:pointer;">
+                        <td>@item.Id</td>
+                        <td>@item.Usuario</td>
+                        <td>@item.Nombres</td>
+                        <td>@item.Apellidos</td>
+                        <td>@item.Identificacion</td>
+                    </tr>
+                }
+            </tbody>
+        }
+    </table>
+</div>

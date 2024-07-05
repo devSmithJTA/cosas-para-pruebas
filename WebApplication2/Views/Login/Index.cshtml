@@ -1,0 +1,58 @@
+﻿@{
+    Layout = "";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animated Login Form</title>
+    <link rel="stylesheet" type="text/css" href="~/css/Login.css">
+    <link href="~/Assets/fontawesome-free/css/fontawesome.css" rel="stylesheet" />
+    <link href="~/Assets/fontawesome-free/css/brands.css" rel="stylesheet" />
+    <link href="~/Assets/fontawesome-free/css/solid.css" rel="stylesheet" />
+    <link href="~/assets/fontawesome-free/css/solid.css" rel="stylesheet" />
+    <link href="~/assets/fontawesome-free/css/solid.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="~/js/Login.js" type="text/javascript"></script>
+
+</head>
+<body>
+    @*<img class="wave" src="~/img/abstract-blue-and-gray-wave-background-free-vector.webp">*@
+    <img class="wave" src="~/img/fondo burbujas.png">
+    <div class="container">
+        <h1 class="Titulo">BURBUJAS BLUE</h1>
+        <div class="contenedorLogin">
+            <script src="https://unpkg.com/@@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player class="imgusuario" src="https://assets3.lottiefiles.com/packages/lf20_ia8jpabk.json" background="transparent" speed="1" loop autoplay></lottie-player>
+            <div class="login-content">
+                <form action="index.html">
+                    <div class="input-div one">
+                        <div class="i">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="div">
+                            @*<h5>Username</h5>*@
+                            <input type="text" class="input" placeholder="Usuario" id="txtUsuario">
+                        </div>
+                    </div>
+                    <div class="input-div pass">
+                        <div class="i">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="div">
+                            @*<h5>Password</h5>*@
+                            <input type="password" class="input" placeholder="Contraseña" id="txtPassword">
+                        </div>
+                    </div>
+                    @*<a href="#">Forgot Password?</a>*@
+                    <input type="button" class="btn" value="Login" onclick="Login()">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

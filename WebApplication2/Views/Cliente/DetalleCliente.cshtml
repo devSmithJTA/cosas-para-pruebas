@@ -1,0 +1,84 @@
+﻿@model Data.Cliente
+@{
+    Layout = null;
+}
+<script src="Webcam/webcam.js"></script>
+<script language="JavaScript">
+    Webcam.set({
+        width:320,
+        height:240,
+        image_format:'jpg',
+        jpeg_quality:90
+    });
+    Webcam.attach("#Camara");
+</script>
+<script language="JavaScript">
+    function TomarFoto()
+    {
+        Webcam.snap(function(data_uri)
+        {
+            $("#Camara").hide();
+            document.getElementById('FotoTomada').innerHTML=
+            '<img src="'+ data_uri+'"/>';
+            Webcam.upload(data_uri,'Cliente/Capturar',function(code,text)
+            {
+                alert("Foto tomada");
+            });
+        });
+    }
+</script>
+<div class="container">
+    <div class="row">
+            <div class="col col-md-4">
+        @if (String.IsNullOrEmpty(Model.Id.ToString()))
+        {
+            <div id="Camara">
+            </div>
+            <div id="FotoTomada">
+            </div>
+            @*<input type="button" value="Tomar foto" onclick="TomarFoto()" />*@
+        }
+        else
+        {
+           @*<img src="~/imagenescliente/mclovin.jpg" style="width:65%" />*@
+           <img src="@Model.RutaFoto" style="width:65%" />
+        }
+            </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <input type="hidden" id="hdnId" value="@Model.Id" />
+            <input type="hidden" id="hdnRutaFoto" value="@Model.RutaFoto" />
+            <label class="form-label">Nombre Completo:</label>
+            <input type="text" class="form-control" id="txtNombre" value="@Model.NombreCompleto" />
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col">
+            <label class="form-label">Tipo Identificación</label>
+            <input type="text" id="txtTpoIdn" class="form-control" value="@Model.TipoIdnId" list="tipoIdentificacion" />
+        </div>
+        <div class="col">
+            <label class="form-label">Identificación</label>
+            <input type="text" id="txtIdentificacion" class="form-control" value="@Model.Identificacion" />
+        </div>
+        <div class="col">
+            <label class="form-label">Celular:</label>
+            <input type="text" class="form-control" id="txtCelular" value="@Model.Celular" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="form-label">Email:</label>
+            <input type="text" value="@Model.Email" class="form-control" id="txtemail" />
+        </div>
+        <div class="col col-md-4">
+            @if (!String.IsNullOrEmpty(Model.FechaCreacion.ToString()))
+            {
+                <label class="form-label">Fecha Creacion:</label>
+                <input type="text" class="form-control" id="txtFechaCreacion" list="PrendaList" value="@Model.FechaCreacion" disabled="disabled" />
+            }
+        </div>
+    </div>
+</div>

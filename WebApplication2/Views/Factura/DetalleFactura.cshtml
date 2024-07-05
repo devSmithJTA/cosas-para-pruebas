@@ -1,0 +1,27 @@
+﻿@model Data.Factura
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <input type="hidden" id="hdnId" value="@Model.Id" />
+            <label class="form-label">Seleccione cliente:</label>
+            <input type="text" class="form-control" id="txtCliente" list="ClienteList" />
+            @*<input type="text" class="form-control" id="txtCliente" list="ClienteList" value="@Model.cliente.Id | @Model.cliente.NombreCompleto" />*@
+        </div>
+        <div class="col">
+            <label class="form-label">Precio Total:</label>
+            <input type="text" class="form-control" id="txtPrecioTotal" value="@Model.PrecioTotal" disabled="disabled" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-md-4">
+            <label class="form-label">Días de entrega:</label>
+            <input type="text" class="form-control" id="txtEntrega" value="@Model.DiasEntrega" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-md-4">
+            <div id="divBotonFactura" class="col">
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+﻿<div class="modal fade" id="ModalUsuarios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Registro Usuarios</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="divDetalleUsuarios">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" id="btnAgregarServicio" class="btn btn-success" onclick="GuardarUsuarios()">Agregar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<h1>Usuarios</h1>
+<hr />
+<a class="btn btn-info text-white" onclick="DetalleUsuarios(0)">Registrar Usuarios</a>
+<br />
+<datalist id="tipoIdentificacion">
+    @foreach (var item in ViewBag.TipoIdentificacion)
+    {
+        <option value="@item.Id | @item.Descripcion">@item.Id - @item.Descripcion</option>
+    }
+</datalist>
+<div id="divListaUsuarios">
+</div>
+<script src="~/js/Servicio.js"></script>

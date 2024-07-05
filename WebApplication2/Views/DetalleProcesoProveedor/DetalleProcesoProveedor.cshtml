@@ -1,0 +1,36 @@
+﻿@model Data.DetalleProcesoProveedor
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <input type="hidden" id="hdnId" value="@Model.Id" />
+            <label class="form-label">Tipo Proceso:</label>
+            @if (String.IsNullOrEmpty(Model.TipoProcesoProveedorId.ToString()))
+            {
+                <input type="text" class="form-control" id="txtProceso" list="ProcesoList" value="" />
+            }
+            else
+            {
+                <input type="text" class="form-control" id="txtProceso" list="ProcesoList" value="@Model.tipoProceso.Id | @Model.tipoProceso.Descripcion" />
+            }
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col col-md-4 col-sm-4">
+            <label class="form-label">Cantidad</label>
+            <div class="input-group h-25">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="btnmenos">-</button>
+                </div>
+                <input type="text" class="form-control w-25 p-3" id="txtCantidad" style="height:100%" value="@Model.Cantidad" />
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="btnmas">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-4">
+            <label class="form-label">Precio:</label>
+            <input type="text" class="form-control" id="txtPrecio" value="@Model.Precio" />
+        </div>
+    </div>
+</div>

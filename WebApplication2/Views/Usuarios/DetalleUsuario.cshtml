@@ -1,0 +1,47 @@
+﻿@model Data.Usuarios
+@{
+    Layout = null;
+}
+<div class="container">
+    <div class="row">
+    </div>
+    <div class="row">
+        <div class="col">
+            <input type="hidden" id="hdnId" value="@Model.Id" />
+            <label class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="txtNombre" value="@Model.Nombres" />
+        </div>
+        <div class="col">
+            <label class="form-label">Apellido:</label>
+            <input type="text" class="form-control" id="txtApellido" value="@Model.Apellidos" />
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col">
+            <label class="form-label">Tipo Identificación</label>
+            <input type="text" id="txtTpoIdn" class="form-control" value="@Model.TipoIdentificacion" list="tipoIdentificacion" />
+        </div>
+        <div class="col">
+            <label class="form-label">Identificación</label>
+            <input type="text" id="txtIdentificacion" class="form-control" value="@Model.Identificacion" />
+        </div>
+        <div class="col">
+            <label class="form-label">Usuario:</label>
+            <input type="text" class="form-control" id="txtusuario" value="@Model.Usuario" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="form-label">Password:</label>
+            <input type="text" value="@Model.Password" class="form-control" id="txtpassword" />
+        </div>
+        <div class="col col-md-4">
+            @if (!String.IsNullOrEmpty(Model.FechaCreacion.ToString()))
+            {
+                <label class="form-label">Fecha Creacion:</label>
+                <input type="text" class="form-control" id="txtFechaCreacion" list="PrendaList" value="@Model.FechaCreacion" disabled="disabled" />
+            }
+        </div>
+    </div>
+</div>

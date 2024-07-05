@@ -1,0 +1,83 @@
+﻿@model Data.Ventas
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <label class="form-label">Estado:</label>
+            <input type="text" class="form-control" id="txtEstado" value="@Model.Estado" readonly="readonly" />
+        </div>
+        <div class="col">
+            <input type="hidden" id="hdnId" value="@Model.Id" />
+            <label class="form-label">Proceso:</label>
+            @if (String.IsNullOrEmpty(Model.ProcesoId.ToString()))
+            {
+                <input type="text" class="form-control" id="txtProceso" list="ProcesoList" value="" />
+            }
+            else
+            {
+                <input type="text" class="form-control" id="txtProceso" list="ProcesoList" value="@Model.proceso.Id | @Model.proceso.Descripcion" />
+            }
+        </div>
+        <div class="col">
+            <label class="form-label">Tipo Prenda:</label>
+            @if (String.IsNullOrEmpty(Model.TiposPrendaId.ToString()))
+            {
+                <input type="text" class="form-control" id="txtPrenda" list="PrendaList" value="" />
+            }
+            else
+            {
+                <input type="text" class="form-control" id="txtPrenda" list="PrendaList" value="@Model.tiposPrenda.Id | @Model.tiposPrenda.Descripcion" />
+            }
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-md-4">
+            <label class="form-label">Tela:</label>
+            @if (String.IsNullOrEmpty(Model.TelasId.ToString()))
+            {
+                <input type="text" class="form-control" id="txtTela" list="TelasList" value="" />
+            }
+            else
+            {
+                <input type="text" class="form-control" id="txtTela" list="TelasList" value="@Model.telas.Id | @Model.telas.Descripcion" />
+            }
+        </div>
+        <div class="col">
+            <label class="form-label">Color:</label>
+            <input class="form-control" id="txtColor" value="@Model.Color" />
+        </div><div class="col">
+            <label class="form-label">Adición:</label>
+            @if (String.IsNullOrEmpty(Model.AdicionId.ToString()))
+            {
+                <input class="form-control" type="text" id="txtAdicion" list="AdicionList" value="" />
+            }
+            else
+            {
+                <input class="form-control" type="text" id="txtAdicion" list="AdicionList" value="@Model.adicion.Id | @Model.adicion.Descripcion" />
+            }
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-md-4 col-sm-4">
+            <label class="form-label">Cantidad</label>
+            <div class="input-group h-25">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="btnmenos">-</button>
+                </div>
+                <input type="text" class="form-control w-25 p-3" id="txtCantidad" style="height:100%" value="@Model.Cantidad" />
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="btnmas">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="col col-md-4">
+            <label class="form-label">Precio:</label>
+            <input type="text" class="form-control" id="txtPrecio" value="@Model.Precio" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label class="form-label">Observación:</label>
+            <input type="text" class="form-control" id="txtObservacion" value="@Model.Observacion" />
+        </div>
+    </div>
+</div>

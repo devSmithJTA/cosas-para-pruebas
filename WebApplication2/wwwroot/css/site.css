@@ -1,0 +1,41 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+header {
+    background-color: #0EC2EE;
+}
+body {
+  margin-bottom: 60px;
+}
+li {
+    padding: 0px;
+    height: 28px;
+}
+li:hover 
+{
+    background-color:white;
+}
+.ablanco
+{
+    color:white;
+    text-decoration:none;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-top:8px;
+    padding-bottom:18px;
+}
+.ablanco:hover
+{
+    color:black;
+}

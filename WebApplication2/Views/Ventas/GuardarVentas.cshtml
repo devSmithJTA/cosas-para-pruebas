@@ -1,0 +1,106 @@
+﻿@*@model Data.Factura*@
+@{
+    ViewData["Title"] = "ObtenerFactura";
+    Layout = "";
+}
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @*<link rel="stylesheet" href="~/BurbujasBlue.styles.css" asp-append-version="true" />*@
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>*@
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="~/Librerias/DataTable/datatables.min.js"></script>
+    <link rel="stylesheet" href="~/Librerias/DataTable/datatables.css" />
+    <link rel="stylesheet" href="~/css/Estilos.css" />
+</head>
+<table class="table table-striped table-bordered" style="text-align:center;">
+    <thead>
+        <tr>
+            <th colspan="6" style="background-color:#0EC2EE">
+                <h1 class="Titulo">Lavaseco Burbujas Blue</h1>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Dirección
+            </th>
+            <th colspan="3">
+                Carrera 40b # 18 Sur
+            </th>
+            <th>
+                Teléfono
+            </th>
+            <th>
+                123123123
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Fecha
+            </th>
+            <th>
+                27/12/2022
+            </th>
+            <th>
+                Cliente
+            </th>
+            <th colspan="3">
+                Armando Casas
+            </th>
+        </tr>
+        <tr>
+            <th colspan="6">
+                Descripcion Factura
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Proceso
+            </th>
+            <th>
+                Prenda
+            </th>
+            <th>
+                Color
+            </th>
+            <th>
+                Adicion
+            </th>
+            <th>
+                Cantidad
+            </th>
+            <th>
+                Precio
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+       @* @foreach (Data.Ventas ventas in Model.venta)
+        {*@
+            <tr>
+                <td>venta.</td>
+                <td>ASD</td>
+                <td>ASD</td>
+                <td>ASD</td>
+                <td>1</td>
+                <td>15000</td>
+            </tr>
+        @*}*@
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4">
+            </td>
+            <td>
+                Precio Total:
+            </td>
+            <td>
+                12341234
+            </td>
+        </tr>
+    </tfoot>
+</table>
+

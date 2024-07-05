@@ -1,0 +1,147 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebApplication2
+build_property.RootNamespace = WebApplication2
+build_property.ProjectDir = C:\Users\SMITHJTA\Desktop\BurbujasSemiTerminado\WebApplication2\WebApplication2\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\SMITHJTA\Desktop\BurbujasSemiTerminado\WebApplication2\WebApplication2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Cliente/DetalleCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxEZXRhbGxlQ2xpZW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Cliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Cliente/ListaClientes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxMaXN0YUNsaWVudGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/DetalleProcesoProveedor/DetalleProcesoProveedor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVByb2Nlc29Qcm92ZWVkb3JcRGV0YWxsZVByb2Nlc29Qcm92ZWVkb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/DetalleProcesoProveedor/DetalleProcesoProveedorDinamico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVByb2Nlc29Qcm92ZWVkb3JcRGV0YWxsZVByb2Nlc29Qcm92ZWVkb3JEaW5hbWljby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Factura/DetalleFactura.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxEZXRhbGxlRmFjdHVyYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Factura/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Factura/ListaFactura.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxMaXN0YUZhY3R1cmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Factura/MostrarFactura.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxNb3N0cmFyRmFjdHVyYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Factura/ObtenerFactura.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxPYnRlbmVyRmFjdHVyYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Factura/PvBotonImprimir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxQdkJvdG9uSW1wcmltaXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Login/Index1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXgxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/ProcesoProveedor/DetalleProcesoProveedor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzb1Byb3ZlZWRvclxEZXRhbGxlUHJvY2Vzb1Byb3ZlZWRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/ProcesoProveedor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzb1Byb3ZlZWRvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/ProcesoProveedor/ListaProcesoProveedor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzb1Byb3ZlZWRvclxMaXN0YVByb2Nlc29Qcm92ZWVkb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/ProcesoProveedor/MostrarProcesoProveedor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzb1Byb3ZlZWRvclxNb3N0cmFyUHJvY2Vzb1Byb3ZlZWRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Usuarios/DetalleUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWxsZVVzdWFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Usuarios/ListarUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcTGlzdGFyVXN1YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Ventas/DetalleVentas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXERldGFsbGVWZW50YXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Ventas/DetalleVentasDinamicas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXERldGFsbGVWZW50YXNEaW5hbWljYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Ventas/GuardarVentas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEd1YXJkYXJWZW50YXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Ventas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Ventas/ListaVentas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXExpc3RhVmVudGFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SMITHJTA/Desktop/BurbujasSemiTerminado/WebApplication2/WebApplication2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-amt9qciysm

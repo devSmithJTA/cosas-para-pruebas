@@ -1,0 +1,111 @@
+﻿<div class="modal fade" id="ModalVentas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Registro Venta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="divDetalleVentas">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        @*<button type="button" id="btnAgregarServicio" class="btn btn-success" onclick="GuardarVenta()">Agregar</button>*@
+        <button type="button" id="btnAgregarServicio" class="btn btn-success" onclick="RegistrarVenta()">Agregar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<h1>Servicio</h1>
+<hr />
+<a class="btn btn-info text-white" onclick="DetalleVentas(0)">Agregar Venta</a>
+<br />
+
+
+
+
+<div class="modal fade" id="ModalFactura" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Creación Factura</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="divDetalleFactura">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                @*<button type="button" id="btnAgregarServicio" class="btn btn-success" onclick="GuardarVenta()">Agregar</button>*@
+                <button type="button" id="btnAgregarServicio" class="btn btn-success" onclick="GuardarFacturaVentas()">Generar Factura</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row table-responsive" style="padding:30px;">
+    <table class="table table-striped table-bordered" style="text-align:center;" id="tblServicioDinamico">
+        <thead>
+            <tr>
+                <th style="display:none" scope="col">Id</th>
+                <th style="display:none" scope="col">Id</th>
+                <th style="display:none" scope="col">Id</th>
+                <th style="display:none" scope="col">Id</th>
+                <th style="display:none" scope="col">Id</th>
+                <th style="display:none" scope="col">Id</th>
+                <th style="display:none" scope="col">Id</th>
+                <th style="display:none" scope="col">Id</th>
+                <th scope="col">Id</th>
+                <th scope="col">Proceso</th>
+                <th scope="col">Tipo Prenda</th>
+                <th scope="col">Tela</th>
+                <th scope="col">Color</th>
+                <th scope="col">Adicion</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Precio</th>
+                <th scope="col"> </th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+<hr />
+<a class="btn btn-info text-white" onclick="DetalleFactura(0)">Crear factura</a>
+<br />
+
+
+
+<datalist id="ProcesoList">
+    @foreach (var item in ViewBag.listaProceso)
+    {
+        <option value="@item.Id | @item.Descripcion">@item.Id - @item.Descripcion</option>
+    }
+</datalist>
+<datalist id="PrendaList">
+    @foreach (var item in ViewBag.listaTipoPrenda)
+    {
+        <option value="@item.Id | @item.Descripcion">@item.Id - @item.Descripcion</option>
+    }
+</datalist>
+<datalist id="TelasList">
+    @foreach (var item in ViewBag.listaTelas)
+    {
+        <option value="@item.Id | @item.Descripcion">@item.Id - @item.Descripcion</option>
+    }
+</datalist>
+<datalist id="AdicionList">
+    @foreach (var item in ViewBag.listaAdiciones)
+    {
+        <option value="@item.Id | @item.Descripcion">@item.Id - @item.Descripcion</option>
+    }
+</datalist>
+<datalist id="ClienteList">
+    @foreach (var item in ViewBag.listaClientes)
+    {
+        <option value="@item.Id | @item.NombreCompleto">@item.Id - @item.NombreCompleto</option>
+    }
+</datalist>
+@*<div id="divListaVentas">
+</div>*@
+<script src="~/js/Servicio.js"></script>

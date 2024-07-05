@@ -1,0 +1,94 @@
+﻿@model Data.ProcesoProveedor
+@{
+    ViewData["Title"] = "ObtenerFactura";
+    Layout = "";
+}
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @*<link rel="stylesheet" href="~/BurbujasBlue.styles.css" asp-append-version="true" />*@
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>*@
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="~/Librerias/DataTable/datatables.min.js"></script>
+    <link rel="stylesheet" href="~/Librerias/DataTable/datatables.css" />
+    <link rel="stylesheet" href="~/css/Estilos.css" />
+</head>
+<table class="table table-striped table-bordered" style="text-align:center;">
+    <thead>
+        <tr>
+            <th colspan="4" style="background-color:#0EC2EE">
+                <h1 class="Titulo">Lavaseco Burbujas Blue</h1>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Dirección
+            </th>
+            <th>
+                Carrera 40b # 18 Sur
+            </th>
+            <th>
+                Teléfono
+            </th>
+            <th>
+                123123123
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Fecha
+            </th>
+            <th>
+                @Model.FechaFacturacion
+            </th>
+            <th>
+                Factura No:
+            </th>
+            <th>
+                @Model.Id
+            </th>
+        </tr>
+        <tr>
+            <th colspan="4">
+                Detalle
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Cantidad
+            </th>
+            <th colspan="2">
+                Proceso
+            </th>
+            <th>
+                Precio
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Data.DetalleProcesoProveedor venta in Model.detalles)
+        {
+            <tr>
+                <td>@venta.Cantidad</td>
+                <td colspan="2">@venta.tipoProceso.Descripcion</td>
+                <td>@venta.Precio</td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">
+            </td>
+            <td>
+                Precio Total:
+            </td>
+            <td>
+                @Model.PrecioTotal
+            </td>
+        </tr>
+    </tfoot>
+</table>
+

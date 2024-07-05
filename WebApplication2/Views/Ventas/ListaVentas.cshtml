@@ -1,0 +1,78 @@
+﻿@model IEnumerable<Data.Ventas>
+<div class="table-responsive" style="background-color:white;">
+    <br />
+    <table class="table table-sm table-hover" id="tblVentas">
+        @if (Model != null)
+        {
+
+            <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Proceso
+                    </th>
+                    <th>
+                        Tipo Prenda
+                    </th>
+                    <th>
+                        Color
+                    </th>
+                    <th>
+                        Adicion
+                    </th>
+                    <th>
+                        Cantidad
+                    </th>
+                    <th>
+                        Precio
+                    </th>
+                    <th>
+
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    @*<tr style="cursor:pointer;" onclick="DetalleServicio(@item.Id)">*@
+                    <tr style="cursor:pointer;">
+                        <td>
+                            @item.Id
+                        </td>
+                        <td style=" word-break: break-all;">
+                            @item.proceso.Descripcion
+                        </td>
+                        <td>
+                            @item.tiposPrenda.Descripcion
+                        </td>
+                        <td>
+                            @item.Color
+                        </td>
+                        <td>
+                            @item.adicion.Descripcion
+                        </td>
+                        <td>
+                            @item.Cantidad
+                        </td>
+                        <td>
+                            @item.Precio
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger" onclick="Eliminar(@item.Id)">Eliminar</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-info" onclick="DetalleVentas(@item.Id)">Consultar</button>
+                        </td>
+                    </tr>
+                }
+                <tr>
+                    <td>
+                        <button type="button" class="btn btn-success" onclick="CrearFactura(@Model)">Crear Factura</button>
+                    </td>
+                </tr>
+            </tbody>
+        }
+    </table>
+</div>
